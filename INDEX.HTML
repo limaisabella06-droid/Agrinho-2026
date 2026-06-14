@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultura Familiar e sua Economia - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agricultura Familiar</h1>
+        <p>A força que alimenta o país e move a nossa economia</p>
+    </header>
+
+    <nav>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#economia" class="nav-link">Impacto Econômico</a>
+        <a href="#dados" class="nav-link">Dados e Estatísticas</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="sobre">
+            <h2>O que é Agricultura Familiar?</h2>
+            <p>É o cultivo da terra realizado por pequenos produtores, onde a gestão da propriedade e o trabalho são feitos pela própria família. Ela é a base da nossa alimentação e move a economia interna de milhares de municípios.</p>
+        </section>
+
+        <section id="economia">
+            <h2>O Impacto na Economia</h2>
+            <p>Clique nos cards abaixo para entender onde a agricultura familiar faz a diferença:</p>
+            
+            <div class="cards-economia">
+                <div class="card" onclick="mostrarAlerta('emprego')">
+                    <h3>Empregabilidade ➔</h3>
+                    <p>Gera cerca de 70% dos empregos no campo, mantendo as famílias na sua região local.</p>
+                </div>
+                <div class="card" onclick="mostrarAlerta('alimento')">
+                    <h3>Mesa dos Brasileiros ➔</h3>
+                    <p>Garante o abastecimento de alimentos frescos que vão direto para as feiras e mercados.</p>
+                </div>
+                <div class="card" onclick="mostrarAlerta('pib')">
+                    <h3>Geração de Renda ➔</h3>
+                    <p>É o motor econômico de mais de 80% dos pequenos municípios do Brasil.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dados">
+            <h2>Dados de Produção no Brasil</h2>
+            <p>Veja a estimativa da participação da Agricultura Familiar na produção de alimentos essenciais do nosso dia a dia:</p>
+            
+            <div class="grafico-container">
+                <div class="grafico-pizza"></div>
+                
+                <div class="legendas">
+                    <div class="legenda-item">
+                        <div class="quadradinho" style="background-color: #4caf50;"></div> Mandioca (80%)
+                    </div>
+                    <div class="legenda-item">
+                        <div class="quadradinho" style="background-color: #ff9800;"></div> Feijão (42%)
+                    </div>
+                    <div class="legenda-item">
+                        <div class="quadradinho" style="background-color: #2196f3;"></div> Leite (58%)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+        <p>&copy; 2026 - Aluna do 1º Ano do Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+// 1. Função para dar efeito de rolagem suave ao clicar nos links do menu
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Cancela o pulo seco padrão
+        
+        const targetId = this.getAttribute('href'); // Captura o id de destino
+        const targetSection = document.querySelector(targetId);
+        
+        // Aplica o deslizar suave na tela
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+// 2. Função que dispara balões de curiosidades extras ao clicar nos cards
+function mostrarAlerta(tipo) {
+    if (tipo === 'emprego') {
+        alert("Curiosidade: A agricultura familiar emprega mais de 10 milhões de pessoas no campo brasileiro!");
+    } else if (tipo === 'alimento') {
+        alert("Sem o pequeno produtor, alimentos básicos como a mandioca e o feijão seriam muito mais caros e raros nos mercados.");
+    } else if (tipo === 'pib') {
+        alert("Economia Viva: O dinheiro gerado nas feiras locais circula dentro da própria comunidade, fortalecendo as pequenas cidades!");
+    }
+}
